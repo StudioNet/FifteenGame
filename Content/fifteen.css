@@ -1,0 +1,191 @@
+/*OVERIDE BOOTSTRAP STYLES*/
+
+.nav-tabs li a {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.nav-tabs .active a {
+    background-color: rgb(134, 186, 193);
+}
+
+.nav-tabs .active a:hover {
+    background-color: rgb(134, 186, 193);
+}
+
+/*UI STYLES*/
+
+body {
+    background-color: rgb(225, 221, 219);
+}
+
+.tabset {
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+}
+
+.tabset ul {
+    border-bottom: solid 1px rgb(45, 150, 186);
+}
+
+.wellcome-area {
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 0;
+}
+
+.wellcome-area h4 {
+    color: rgb(167, 174, 176);
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 14pt;
+    font-weight: normal;
+    text-align: justify;
+    line-height: 15px;
+}
+
+
+.tab-item {
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 16pt;
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.tab-content {
+    margin-left: 10px;
+}
+
+.tab-content ul {
+    list-style-image: url('/imgs/info-26.png');
+    list-style-position: inside;
+    border: 0;
+    margin-left: 40px;
+}
+
+.tab-content ul li {
+    line-height: 35px;
+    vertical-align: text-top;
+}
+
+.tab-content ul li span {
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 18pt;
+}
+
+.labelName {
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 18pt;
+}
+
+.reload {
+    background: transparent;
+    background-image: url('/imgs/Reload.png');
+    border: 0;
+    width: 48px !important;
+    height: 48px;
+}
+
+/*GAME BOARD STYLES */
+
+#wrapper {
+    display: inline-block;   
+}
+
+.digit {
+    margin-top: 1px;
+    margin-left: 1px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(182, 231, 227, 0.75);
+}
+
+.empty {
+    margin-top: 1px;
+    margin-left: 1px;
+    background-color: rgb(235, 240, 243);
+}
+
+.board {
+    display: table;         
+    width: auto;         
+    background-color: #eee;
+    margin-top: 10px;              
+}
+
+.div-table-row {
+    display: table-row;
+    width: auto;
+    clear: both;
+}
+
+.div-row-cell {
+    position: relative;
+    float: left;       
+    width: 100px;
+    height: 100px;
+    border:1px solid  #666666;
+}
+
+.digit span {
+    display: block;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 20pt;
+    color:#264e77;
+    margin-top: 30%;
+}
+
+
+.drag-mouse-over {
+    border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em; 
+}
+            
+.drag-mouse-over span {
+    cursor: move;
+    color: red; 
+}
+            
+.drag-over 
+{
+    border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+}
+            
+.drag-enter {
+    border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    border: 0.1em rgb(47, 136, 153) dot-dash;
+}
+            
+.drag-element {
+    background-color: rgb(96, 208, 220);
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    -webkit-border-radius: 0.4em;
+    border: 1px darkgrey dot-dash;
+    cursor: move;
+}
+
+.steps {
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 60pt;
+    color:#264e77;
+    position: relative;
+    top: -250px;
+    left: 550px;
+    float: left;
+}
