@@ -1,0 +1,106 @@
+#topbar {
+	.navbar {
+		box-shadow: $topbar-shadow;
+	}
+    .navbar-fixed-top {
+  		border: 0;
+  		background-color: $topbar-bg !important;
+  		color: $topbar-color !important;
+	}
+	.avatar {
+		object-fit: cover;
+		border-radius: 500px;
+		max-width: 50px;
+	}
+	.nav-link {
+    	display: block;
+    	padding-top: 0.825rem;
+    	padding-bottom: 0.825rem;
+	}
+	.menu-img {
+		margin-left: 0.5rem;
+	}
+	a {
+		color: $topbar-color;
+
+		&:hover {
+			color: lighten($topbar-color, 10%);
+			text-decoration: none;
+			cursor: pointer; 
+			cursor: hand;
+		}
+	}
+	.navbar-brand {
+		padding-top: .6rem;
+	}
+	
+	.pull-right {
+		text-align: center;
+		float: right;
+	}
+}
+
+#sidebar {
+
+	.sidebar {
+	    position: fixed;
+	    top: $topbar-height;
+	    bottom: 0;
+	    left: 0;
+	    z-index: 1000;
+	    display: block;
+	    width: $sidebar-width;
+	    background-color: $sidebar-bg;
+	    color: $sidebar-color;
+	    box-shadow: $sidebar-shadow;
+	    height: 100%;
+	}
+	.sidebar-link {
+		padding: .55rem .2rem;
+		margin-top: .25rem;
+
+		i {
+			color: darken($white, 10%);
+			margin-left: .75rem;
+			margin-right: .5rem;
+		}
+		a {
+			color: darken($white, 10%);
+		}
+	}
+	.active {
+		background-color: lighten($sidebar-bg, 10%);
+		
+		i {
+			color: $white;
+		}
+		a {
+			color: $white;
+		}
+	}
+	.sidebar-footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: $sidebar-width;
+		text-align: center;
+		padding: 15px 5px;
+
+		img {
+			max-width: $sidebar-width/3;
+		}
+	}
+
+	.bar-icon {
+		outline: none;
+		width: 32px;
+		display: inline-block;
+		text-align: center;
+
+		& img {
+			width: 32px;
+			vertical-align: middle;
+		}
+	}
+}
+

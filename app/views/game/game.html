@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html data-ng-app="GameApp">
+    <head>
+        <title>Game Board</title>
+        <link href="/Content/fifteen.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+    <div data-ng-controller="GameController">
+        <div class="row-fluid hero-unit">
+            <div class="span4">
+                <h2>Let's start</h2>
+                <!--<div data-ng-view=""></div>-->
+            </div>
+            <div id="wrapper" class="span4">
+                <!--<input class="reload" type="button" data-ng-click="reorderBoard()"/>-->
+                <!--<div id="board" class="board">
+                    <div class="div-table-row" data-ng-repeat="row in board">
+                        <gamecell data-ng-repeat="cell in row" ng-model="cell.cellnumber" value="cell.cellnumber"></gamecell>
+                    </div>
+                </div>-->
+                <fg-board board-id="mainGameBoard" styles="board">
+                    <div class="div-table-row" ng-repeat="row in boardViewModel.board track by $index">
+                        <fg-board-cell ng-repeat="cell in row track by $index"
+                                       current="cell"
+                                       shown-value="cell.shownValue">
+                        </fg-board-cell>
+                    </div>
+
+                    <div class="span4 steps">{{stepsCounter}}</div>
+                </fg-board>
+                
+            </div>
+        </div>                    
+    </div>
+
+    </body>
+</html>
